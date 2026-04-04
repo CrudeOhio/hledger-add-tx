@@ -1,6 +1,6 @@
 # hledger-add-tx 📜
 
-`hledger-add-tx` es una utilidad en Python diseñada para añadir transacciones a tus archivos de **hledger** de forma rápida, segura y no interactiva. Es ideal para scripts de automatización, integraciones con otras herramientas o simplemente para quienes prefieren la velocidad de la línea de comandos.
+`hledger-add-tx` es una utilidad en Python diseñada para añadir transacciones a tus archivos de **hledger** de forma rápida, segura y no interactiva. Es ideal para scripts de automatización, integraciones con otras herramientas o simplemente para quienes prefieren la velocidad de la línea de comandos. La utilidad ha sido programada con ayuda de la inteligencia artificial.
 
 ## ✨ Características principales
 
@@ -16,7 +16,7 @@
 1. Asegúrate de tener instalado `hledger` y `Python 3`.
 2. Clona este repositorio:
 ```bash
-git clone https://github.com/crudeohio/hledger-add-tx.git
+git clone https://github.com/CrudeOhio/hledger-add-tx.git
 ```
 Dale permisos de ejecución:
 
