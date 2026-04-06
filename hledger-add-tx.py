@@ -462,8 +462,8 @@ CONSULTA RÁPIDA PARA IA
     p.add_argument('-D', '--date')
     p.add_argument('-m', '--mark')
     p.add_argument('-d', '--description')
-    p.add_argument('-p', '--payee')
-    p.add_argument('-n', '--note')
+    p.add_argument('--payee', '-p')
+    p.add_argument('--note', '-n')
     p.add_argument('--code')
     p.add_argument('--txcomment')
     p.add_argument('-f', '--file')
@@ -657,7 +657,7 @@ def main():
         emit(output, args.json)
         sys.exit(1)
 
-    posting_lines = [build_posting(*p, commodity_styles=commodity_styles, amount_column=args.amount_column) for p in resolved_postings]
+    posting_lines = [build_posting(p[0], p[1], p[2], p[3], p[4], p[5], commodity_styles=commodity_styles, amount_column=args.amount_column, cost_type=p[6] if len(p) > 6 else 'total') for p in resolved_postings]
     tx_text = build_transaction(args, posting_lines)
     output['transaction'] = tx_text
 
